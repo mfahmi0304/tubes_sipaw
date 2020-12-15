@@ -1,5 +1,5 @@
 name: tubes_sipaw
-description: A new Flutter project.
+description: Aplikasi SiPaw (Penitipan dan Perawatan hewan) Kelompok 5.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -45,9 +45,25 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/careGrooming.png
+    - assets/careNail.png
+    - assets/careScissors.png
+    - assets/daycareCat.png
+    - assets/daycareDog.png
+    - assets/daycareRabbit.png
+    - assets/detailRabbit.png
+    - assets/detailCat.png
+    - assets/detailDog.png
+    - assets/homeBird.png
+    - assets/homeCat.png
+    - assets/homeFish.png
+    - assets/homePromotion.png
+    - assets/logo.png
+    - assets/logo2.png
+    - assets/petcareProduct.png
+    - assets/profil.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

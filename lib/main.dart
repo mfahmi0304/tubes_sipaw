@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -115,3 +116,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+=======
+     // debugShowCheckedModeBanner: false,
+      title: 'Aplikasi SiPaw',
+          );
+        }
+}
+>>>>>>> 34a88cbcf721be51b000186c0c1097bcb8594a63
