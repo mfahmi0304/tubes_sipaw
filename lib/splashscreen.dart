@@ -35,16 +35,9 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           children: [
             Image.asset(
               "assets/Logo.png",
-              width: 200,
-              height: 200,
+              width: 1000,
+              height: 1000,
               alignment: Alignment.center,
-            ),
-            Text(
-              'Sipaw',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black
-              ),
             ),
           ],
         ),
