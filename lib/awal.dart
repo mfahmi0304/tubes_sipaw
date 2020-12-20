@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/login/login.dart';
+import 'package:tubes_sipaw/login/register.dart';
 
 class AwalPage extends StatefulWidget {
   @override
@@ -31,7 +33,14 @@ class _AwalPageState extends State<AwalPage> {
                 ),
                 minWidth: 200.0,
                 height: 48.0,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => Login(),
+                    ),
+                  );
+                },
                 color: Color(0xFF1C314E),
                 child: Text('Login', style: TextStyle(color: Colors.white)),
               ),
@@ -44,7 +53,14 @@ class _AwalPageState extends State<AwalPage> {
                 side: BorderSide(color: Colors.white)),
                 minWidth: 200.0,
                 height: 48.0,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => register(),
+                    ),
+                  );
+                },
                 color: Colors.white,
                 child: Text(
                   'Sign Up', 
