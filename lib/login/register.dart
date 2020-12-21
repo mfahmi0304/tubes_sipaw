@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:tubes_sipaw/login.dart';
+import 'package:tubes_sipaw/login/login.dart';
 
-class register extends StatefulWidget {
+
+class Register extends StatefulWidget {
   @override
   _RegisterState createState() => _RegisterState();
 }
@@ -121,8 +122,8 @@ class _RegisterState extends State<Register> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => home(
-                            username: emailController.text,
+                          builder: (context) => Login(
+                            email: emailController.text,
                             password: passwordController.text,
                           ),
                         ),

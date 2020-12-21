@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:tubes_sipaw/register.dart';
-import 'package:tubes_sipaw/home.dart';
+import 'package:tubes_sipaw/login.dart';
+import 'package:tubes_sipaw/home/home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -88,7 +89,7 @@ class _LoginState extends State<Login> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Dashboard(
+                          builder: (context) => tubes_sipaw/home/home.dart(
                             username: usernameController.text,
                             password: passwordController.text,
                           ),
