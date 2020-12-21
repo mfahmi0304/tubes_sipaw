@@ -88,9 +88,9 @@ class _LoginState extends State<Login> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Dashboard(
-                            username: usernameController.text,
-                            password: passwordController.text,
+                          builder: (context) => HomePage(
+                            // username: usernameController.text,
+                            // password: passwordController.text,
                           ),
                         ),
                       );

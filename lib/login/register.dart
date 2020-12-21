@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:tubes_sipaw/home/home.dart';
 import 'package:tubes_sipaw/login/login.dart';
 
 class register extends StatefulWidget {
@@ -7,7 +8,7 @@ class register extends StatefulWidget {
   _RegisterState createState() => _RegisterState();
 }
 
-class _RegisterState extends State<Register> {
+class _RegisterState extends State<register> {
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
 
@@ -121,9 +122,9 @@ class _RegisterState extends State<Register> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => home(
-                            username: emailController.text,
-                            password: passwordController.text,
+                          builder: (context) => HomePage(
+                            // username: emailController.text,
+                            // password: passwordController.text,
                           ),
                         ),
                       );
