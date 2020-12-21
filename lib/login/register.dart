@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:tubes_sipaw/home/home.dart';
+// ignore: unused_import
 import 'package:tubes_sipaw/login/login.dart';
 
+// ignore: camel_case_types
 class register extends StatefulWidget {
   @override
   _RegisterState createState() => _RegisterState();
