@@ -12,27 +12,29 @@ class HeaderWithLogoBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: size.height * 0.1,
-        child: Stack(
-          children: <Widget>[
-            ClipPath(
-              clipper: CustomShape(),
-              child: Container(
-                height: size.height * 1,
-                color: kPrimaryColor,
-              ),
+      height: size.height * 0.1,
+      child: Stack(
+        children: <Widget>[
+          ClipPath(
+            clipper: CustomShape(),
+            child: Container(
+              height: size.height * 1,
+              color: kPrimaryColor,
             ),
-            Positioned(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 60),
-                height: 50,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/logo2.png"))),
-              ),
+          ),
+          Positioned(
+            //top: 50,
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 60),
+              height: 50,
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: AssetImage("assets/logo2.png"))),
             ),
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
   }
 }
 

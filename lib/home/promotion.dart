@@ -37,7 +37,7 @@ class PromotionView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      height: 155.0,
+      height: 145.0,
       child: Center(
         child: Image.asset(
           image,

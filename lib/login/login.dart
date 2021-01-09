@@ -84,8 +84,8 @@ class _LoginState extends State<Login> {
                       passwordController.text == '') {
                     showToast('Masukkan username atau password');
                   } else {
-                    if (usernameController.text == 'Ramdan' &&
-                        passwordController.text == '123456') {
+                    if (usernameController.text == '1' &&
+                        passwordController.text == '1') {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
