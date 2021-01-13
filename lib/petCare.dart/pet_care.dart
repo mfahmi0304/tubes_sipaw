@@ -1,20 +1,20 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/constants.dart';
-import 'package:tubes_sipaw/home/body.dart';
+import 'package:tubes_sipaw/dayCare/body_daycare.dart';
 
-class HomePage extends StatefulWidget {
+class PetCare extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _PetCareState createState() => _PetCareState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _PetCareState extends State<PetCare> {
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: BodyDayCare(),
       bottomNavigationBar: BottomNavyBar(
         selectedIndex: _selectedIndex,
         showElevation: true,
