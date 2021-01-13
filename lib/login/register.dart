@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+<<<<<<< HEAD
+=======
+import 'package:tubes_sipaw/home/home.dart';
+>>>>>>> 4ebe55389231bca076f5bbc13f8ff3ffd926625f
 import 'package:tubes_sipaw/login/login.dart';
 
 
@@ -8,7 +12,7 @@ class Register extends StatefulWidget {
   _RegisterState createState() => _RegisterState();
 }
 
-class _RegisterState extends State<Register> {
+class _RegisterState extends State<register> {
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
 
@@ -122,9 +126,15 @@ class _RegisterState extends State<Register> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< HEAD
                           builder: (context) => Login(
                             email: emailController.text,
                             password: passwordController.text,
+=======
+                          builder: (context) => HomePage(
+                            // username: emailController.text,
+                            // password: passwordController.text,
+>>>>>>> 4ebe55389231bca076f5bbc13f8ff3ffd926625f
                           ),
                         ),
                       );

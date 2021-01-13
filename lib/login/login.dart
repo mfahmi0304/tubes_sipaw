@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+<<<<<<< HEAD
 import 'package:tubes_sipaw/login.dart';
+=======
+import 'package:tubes_sipaw/login/register.dart';
+>>>>>>> 4ebe55389231bca076f5bbc13f8ff3ffd926625f
 import 'package:tubes_sipaw/home/home.dart';
 
 class Login extends StatefulWidget {
@@ -89,9 +93,15 @@ class _LoginState extends State<Login> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< HEAD
                           builder: (context) => tubes_sipaw/home/home.dart(
                             username: usernameController.text,
                             password: passwordController.text,
+=======
+                          builder: (context) => HomePage(
+                            // username: usernameController.text,
+                            // password: passwordController.text,
+>>>>>>> 4ebe55389231bca076f5bbc13f8ff3ffd926625f
                           ),
                         ),
                       );
