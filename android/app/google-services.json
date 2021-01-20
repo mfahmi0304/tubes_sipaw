@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1093404189190",
+    "project_id": "tubes-sipaw",
+    "storage_bucket": "tubes-sipaw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093404189190:android:ee61da6d085a43a2e21987",
+        "android_client_info": {
+          "package_name": "com.example.tubes_sipaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093404189190-f8tk7pir5s30sjiqa9bh68v3mnphfi1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tubes_sipaw",
+            "certificate_hash": "a9821d311e9f8e755167de592e2fe2c823893a3d"
+          }
+        },
+        {
+          "client_id": "1093404189190-7i93lkq9ni5tan231ebmhcit3icsefdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgUh5v5jDPm_475wbfofCSFcoOfHCmBkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093404189190-7i93lkq9ni5tan231ebmhcit3icsefdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
