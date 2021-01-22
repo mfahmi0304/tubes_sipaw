@@ -10,40 +10,55 @@ class BodyDayCare extends StatelessWidget {
       child: Column(
         children: <Widget>[
           HeaderWithLogoBox(size: size),
-          CityDayCare(
-            title: "Jakarta",
-            press: () {},
-          ),
+          KatagoriScreen(),
         ],
       ),
     );
   }
 }
 
-// ignore: must_be_immutable
-class CityDayCare extends StatelessWidget {
-  const CityDayCare({
-    Key key,
-    this.title,
-    this.press,
-  }) : super(key: key);
-  final String title;
-  final Function press;
+class KatagoriScreen extends StatefulWidget {
+  @override
+  _KatagoriScreenState createState() => _KatagoriScreenState();
+}
 
+class _KatagoriScreenState extends State<KatagoriScreen> {
+  String selectedType = "initial";
+  String selectedFrequency = "monthly";
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 8.0),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          InkWell(
-            onTap: press,
-            child: Container(
-              height: 50.0,
-              width: 120.0,
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(15),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                height: 50,
+                width: 110,
+                decoration: (selectedFrequency == "weekly")
+                    ? BoxDecoration(
+                        color: Colors.pink,
+                        borderRadius: BorderRadius.all(Radius.circular(10)))
+                    : BoxDecoration(
+                        border:
+                            Border.all(color: Colors.black.withOpacity(0.3)),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: Center(
+                  child: Text(
+                    "Weekly",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: (selectedFrequency == "weekly")
+                            ? Colors.white
+                            : Colors.black),
+                  ),
+                ),
+              ),
             ),
           ),
         ],
