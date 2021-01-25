@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/constants.dart';
 import 'package:tubes_sipaw/home/header.dart';
 
 // ignore: must_be_immutable
@@ -23,7 +24,6 @@ class KatagoriScreen extends StatefulWidget {
 }
 
 class _KatagoriScreenState extends State<KatagoriScreen> {
-  String selectedType = "initial";
   String selectedFrequency = "monthly";
   @override
   Widget build(BuildContext context) {
@@ -39,9 +39,9 @@ class _KatagoriScreenState extends State<KatagoriScreen> {
               child: Container(
                 height: 50,
                 width: 110,
-                decoration: (selectedFrequency == "weekly")
+                decoration: (selectedFrequency == "Bandung")
                     ? BoxDecoration(
-                        color: Colors.pink,
+                        color: kPrimaryColor,
                         borderRadius: BorderRadius.all(Radius.circular(10)))
                     : BoxDecoration(
                         border:
@@ -49,11 +49,11 @@ class _KatagoriScreenState extends State<KatagoriScreen> {
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Center(
                   child: Text(
-                    "Weekly",
+                    "Bandung",
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
-                        color: (selectedFrequency == "weekly")
+                        color: (selectedFrequency == "Bandung")
                             ? Colors.white
                             : Colors.black),
                   ),

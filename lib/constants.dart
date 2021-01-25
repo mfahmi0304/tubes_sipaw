@@ -11,3 +11,4 @@ const kNavColor = Color(0xFFFCD79D);
 const kNavsColor = Color(0xFFFDBCBC);
 const kNaviColor = Color(0xFF4DB6E4);
 const kNavisColor = Color(0xFFF5B97D);
+const kPrimaryLightColor = Colors.black26;

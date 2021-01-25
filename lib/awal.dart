@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tubes_sipaw/login/login.dart';
-import 'package:tubes_sipaw/login/register.dart';
+import 'package:tubes_sipaw/LoginReg/Login/login_screen.dart';
+import 'package:tubes_sipaw/LoginReg/Signup/signup_screen.dart';
 
 class AwalPage extends StatefulWidget {
   @override
@@ -37,7 +37,7 @@ class _AwalPageState extends State<AwalPage> {
                   Navigator.push(
                     context, 
                     MaterialPageRoute(
-                      builder: (context) => Login(),
+                      builder: (context) => LoginScreen(),
                     ),
                   );
                 },
@@ -57,7 +57,7 @@ class _AwalPageState extends State<AwalPage> {
                   Navigator.push(
                     context, 
                     MaterialPageRoute(
-                      builder: (context) => register(),
+                      builder: (context) => SignUpScreen(),
                     ),
                   );
                 },
