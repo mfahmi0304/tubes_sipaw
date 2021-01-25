@@ -5,6 +5,7 @@ import 'package:tubes_sipaw/libmodels/user_model.dart';
 class AuthenticationService { 
   final FirebaseAuth _firebaseAuth; 
   UserModel userModel = UserModel(); 
+  // ignore: deprecated_member_use
   final userRef = Firestore.instance.collection("users"); 
   
   AuthenticationService(this._firebaseAuth); 
@@ -35,6 +36,7 @@ class AuthenticationService {
   } 
   
   //2 
+  // ignore: missing_return
   Future<String> signUp({String email, String password}) async { 
     try { 
       await _firebaseAuth.createUserWithEmailAndPassword( 
@@ -59,11 +61,13 @@ class AuthenticationService {
     userModel = UserModel( 
         uid: uid, username: username, email: email, timestamp: timestamp); 
   
+    // ignore: deprecated_member_use
     await userRef.document(uid).setData(userModel.toMap(userModel)); 
   } 
   
   //4 
   Future<UserModel> getUserFromDB({String uid}) async { 
+    // ignore: deprecated_member_use
     final DocumentSnapshot doc = await userRef.document(uid).get(); 
   
     //print(doc.data()); 

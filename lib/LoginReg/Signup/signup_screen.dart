@@ -9,6 +9,7 @@ import 'package:tubes_sipaw/components/acc_check.dart';
 import 'package:tubes_sipaw/components/rounded_button.dart';
 import 'package:tubes_sipaw/components/rounded_input_field.dart';
 import 'package:tubes_sipaw/components/rounded_password_field.dart';
+import 'package:tubes_sipaw/constants.dart';
 import 'package:tubes_sipaw/libservices/authentication_service.dart'; 
 
 // class SignUpScreen extends StatelessWidget {
@@ -27,6 +28,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   //To Toggle Password Text Visibility. 
+  // ignore: unused_field
   bool _obscureText = true;  
   String _username, _email, _password; 
     
@@ -75,10 +77,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
       style: TextStyle(fontWeight: FontWeight.bold),
     );
   } 
-   
+  
   _showUsernameInput() { 
     return RoundedInputField( 
-      hintText: "Nama",
+      hintText: "Nama", 
       onChanged: (val) => _username = val, 
     );
   } 
@@ -209,7 +211,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       backgroundColor: Colors.black, 
       content: Text( 
         "$message", 
-        style: TextStyle(color: Colors.red), 
+        style: TextStyle(color: kNaviColor), 
       ), 
     ); 
     _scaffoldKey.currentState.showSnackBar(snackbar); 

@@ -1,4 +1,6 @@
+// ignore: unused_import
 import 'package:cloud_firestore/cloud_firestore.dart'; 
+// ignore: unused_import
 import 'package:firebase_auth/firebase_auth.dart'; 
   
 class UserModel { 

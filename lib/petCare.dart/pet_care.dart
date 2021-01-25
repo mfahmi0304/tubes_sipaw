@@ -9,52 +9,12 @@ class PetCare extends StatefulWidget {
 }
 
 class _PetCareState extends State<PetCare> {
-  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
-      body: BodyDayCare(),
-      bottomNavigationBar: BottomNavyBar(
-        selectedIndex: _selectedIndex,
-        showElevation: true,
-        onItemSelected: (index) => setState(() {
-          _selectedIndex = index;
-        }),
-        items: <BottomNavyBarItem>[
-          BottomNavyBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-            activeColor: kNavColor,
-            inactiveColor: kPrimaryColor,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.date_range),
-            title: Text('Booxing'),
-            activeColor: kNavsColor,
-            inactiveColor: kPrimaryColor,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.shopping_bag),
-            title: Text('PetCare'),
-            activeColor: kNaviColor,
-            inactiveColor: kPrimaryColor,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.person),
-            title: Text('Profile'),
-            activeColor: kNavisColor,
-            inactiveColor: kPrimaryColor,
-          ),
-        ],
+      body: Center(
+        child: Text("PetCare"),
       ),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      backgroundColor: kPrimaryColor,
-      elevation: 0,
     );
   }
 }
