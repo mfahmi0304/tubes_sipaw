@@ -16,10 +16,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithLogoBox(size: size),
           TitleWithNames(),
-          SearchBox(
-            colorGrey: Colors.grey,
-            colorWhite: Colors.white,
-          ),
+          SearchBoxs(),
           CatagoryWithPet(),
           ListCatagoriesSipaw(),
           TitleWithPromotions(),
