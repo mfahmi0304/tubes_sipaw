@@ -8,7 +8,7 @@ class BodyPetCare extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          HeaderWithLogoBox(size: size),
+          // HeaderWithLogoBox(size: size),
           
         ],
       ),

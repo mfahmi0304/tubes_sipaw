@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
                 context.read<AuthenticationService>().authStateChanges), 
       ], 
       child: MaterialApp( 
-        debugShowCheckedModeBanner: false,
+        // debugShowCheckedModeBanner: false,
         home: SplashScreenPage(), 
       ), 
     ); 
