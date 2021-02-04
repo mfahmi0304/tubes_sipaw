@@ -10,7 +10,7 @@ class TitleWithNames extends StatelessWidget {
   Widget build(BuildContext context) {
     return TitleWithName(
       title: "Siti Nurholis",
-      image: "assets/profil.png",
+      image: "assets/profile.png",
       subtitle: "Bandung",
     );
   }

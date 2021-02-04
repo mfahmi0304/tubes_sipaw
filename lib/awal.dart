@@ -13,7 +13,7 @@ class _AwalPageState extends State<AwalPage> {
     return Scaffold(
       body: Center(
         child: ListView(
-          padding: EdgeInsets.only(left: 24.0, right: 24.0, top: 256.0),
+          padding: EdgeInsets.only(left: 24.0, right: 24.0, top: 100.0),
           children: [
             Image.asset(
               "assets/Logo.png",

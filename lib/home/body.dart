@@ -16,10 +16,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithLogoBox(size: size),
           TitleWithNames(),
-          SearchBox(
-            colorGrey: Colors.grey,
-            colorWhite: Colors.white,
-          ),
+          SearchBoxs(),
           CatagoryWithPet(),
           ListCatagoriesSipaw(),
           TitleWithPromotions(),
@@ -30,4 +27,17 @@ class Body extends StatelessWidget {
   }
 }
 
+// class BodyPage extends StatefulWidget {
+//   @override
+//   _BodyPageState createState() => _BodyPageState();
+// }
+
+// class _BodyPageState extends State<BodyPage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+      
+//     );
+//   }
+// }
 
