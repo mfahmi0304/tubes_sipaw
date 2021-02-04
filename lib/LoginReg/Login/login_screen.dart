@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart'; 
 import 'package:flutter/material.dart';
-import 'package:tubes_sipaw/LoginReg/Login/components/body.dart';
 import 'package:tubes_sipaw/components/rounded_button.dart';
 import 'package:tubes_sipaw/components/rounded_input_field.dart';
 import 'package:tubes_sipaw/components/rounded_password_field.dart';

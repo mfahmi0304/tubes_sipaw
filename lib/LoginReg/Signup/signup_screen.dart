@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart'; 
 import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/LoginReg/Login/login_screen.dart';
-import 'package:tubes_sipaw/LoginReg/Signup/components/body.dart';
 import 'package:provider/provider.dart';
 import 'package:tubes_sipaw/LoginReg/Signup/components/or_divider.dart';
 import 'package:tubes_sipaw/LoginReg//Signup/components/social_icon.dart';
