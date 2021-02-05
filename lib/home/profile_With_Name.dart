@@ -16,7 +16,6 @@ class TitleWithNames extends StatelessWidget {
   }
 }
 
-
 class TitleWithName extends StatelessWidget {
   const TitleWithName({
     Key key, 

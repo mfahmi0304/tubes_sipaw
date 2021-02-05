@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart'; 
 import 'package:flutter/material.dart';
-import 'package:tubes_sipaw/LoginReg/Login/components/body.dart';
 import 'package:tubes_sipaw/components/rounded_button.dart';
 import 'package:tubes_sipaw/components/rounded_input_field.dart';
 import 'package:tubes_sipaw/components/rounded_password_field.dart';
@@ -23,6 +22,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  // ignore: unused_field
   bool _obscureText = true; 
   String _email, _password; 
   bool _isSubmitting; 
@@ -113,6 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
     } 
   } 
   
+  // ignore: non_constant_identifier_names
   _LoginUser() async { 
     setState(() { 
       _isSubmitting = true; 
