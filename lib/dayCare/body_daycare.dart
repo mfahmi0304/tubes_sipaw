@@ -14,8 +14,6 @@ class _BodyDayCareState extends State<BodyDayCare> {
 
   final globalKey = GlobalKey<ScaffoldState>();
   TextEditingController nameController = new TextEditingController();
-  TextEditingController descController = new TextEditingController();
-  TextEditingController urlController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -161,15 +159,33 @@ class _BodyDayCareState extends State<BodyDayCare> {
                       ),
                     ],
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                          katalogWidget("assets/careScissors.png","CUT",true,),
-                          katalogWidget("assets/careGrooming.png", "GROOMING", false),
-                          katalogWidget("assets/careNail.png", "NAIL", false),
+                  SizedBox(height: 10.0),
+                  Container(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            height: 70.0,
+                            margin: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(15),
+                            child: TextFormField(
+                              maxLines: 3,
+                              controller: nameController,
+                              decoration: InputDecoration(
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
+                                labelText: 'About:',
+                                labelStyle: TextStyle(color: Colors.grey),
+                                border: new OutlineInputBorder(
+                                  borderRadius: new BorderRadius.circular(5.0),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
+                    ),
                   ),
                   Expanded(
                     child: Container(),

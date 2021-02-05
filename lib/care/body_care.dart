@@ -14,8 +14,6 @@ class _BodyCareState extends State<BodyCare> {
 
   final globalKey = GlobalKey<ScaffoldState>();
   TextEditingController nameController = new TextEditingController();
-  TextEditingController descController = new TextEditingController();
-  TextEditingController urlController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {

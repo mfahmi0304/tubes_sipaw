@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/constants.dart';
-import 'package:tubes_sipaw/profile/setting.dart';
 
 class ProfilePage extends StatefulWidget {
   @override

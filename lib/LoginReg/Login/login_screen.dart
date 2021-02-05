@@ -22,6 +22,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  // ignore: unused_field
   bool _obscureText = true; 
   String _email, _password; 
   bool _isSubmitting; 
@@ -112,6 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
     } 
   } 
   
+  // ignore: non_constant_identifier_names
   _LoginUser() async { 
     setState(() { 
       _isSubmitting = true; 
