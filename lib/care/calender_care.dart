@@ -80,7 +80,7 @@ class _CalendarPageState extends State<CalendarPage> {
                     children: [
                       Row(
                         children: [
-                          Text("28 Januari 2021", style: TextStyle(
+                          Text("6 Februari 2021", style: TextStyle(
                             color: kButtonSColor,
                             fontWeight: FontWeight.bold
                           ),)
@@ -178,7 +178,7 @@ class _CalendarPageState extends State<CalendarPage> {
                     Expanded(
                       child: Container(),
                     ),
-                    Text("\$50", style: TextStyle(
+                    Text("Rp.100.000,00", style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w600

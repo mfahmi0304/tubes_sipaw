@@ -11,7 +11,7 @@ class _BooxingState extends State<BodyBooxing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      // appBar: buildAppBar(),
       body: BodyBooxing(),
     );
   }
