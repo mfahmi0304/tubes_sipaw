@@ -13,64 +13,73 @@ class _BodyCareState extends State<BodyCare> {
   String selectedFrequencyy = "images";
 
   final globalKey = GlobalKey<ScaffoldState>();
+  final _scaffoldKey = GlobalKey<ScaffoldState>(); 
   TextEditingController nameController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
+      key: _scaffoldKey,
       body: Column(
         children: <Widget>[
           Expanded(
             child: Container(
-              child: Column(
+              child: ListView(
                 children: <Widget>[
                   SizedBox(height: 20),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                        cityWidget("JAKARTA", true),
-                        cityWidget("BANDUNG", false),
-                        cityWidget("BOGOR", false),
-                      ],
+                  Center(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: <Widget>[
+                          cityWidget("JAKARTA", true),
+                          cityWidget("BANDUNG", false),
+                          cityWidget("BOGOR", false),
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(height: 20),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                        pilihWidget("assets/daycareDog.png", "DOG", true),
-                        pilihWidget("assets/cat.png", "CAT", false),
-                        pilihWidget(
-                            "assets/daycareRabbit.png", "RABBIT", false),
-                      ],
+                  Center(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: <Widget>[
+                          pilihWidget("assets/daycareDog.png", "DOG", true),
+                          pilihWidget("assets/cat.png", "CAT", false),
+                          pilihWidget(
+                              "assets/daycareRabbit.png", "RABBIT", false),
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(height: 10.0),
                   Container(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            height: 70.0,
-                            margin: const EdgeInsets.all(10),
-                            padding: const EdgeInsets.all(15),
-                            child: TextFormField(
-                              controller: nameController,
-                              decoration: InputDecoration(
-                                floatingLabelBehavior:
-                                    FloatingLabelBehavior.always,
-                                labelText: 'Name:',
-                                labelStyle: TextStyle(color: Colors.grey),
-                                border: new OutlineInputBorder(
-                                  borderRadius: new BorderRadius.circular(5.0),
+                    child: Center(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.vertical,
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              height: 70.0,
+                              margin: const EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(15),
+                              child: TextFormField(
+                                controller: nameController,
+                                decoration: InputDecoration(
+                                  floatingLabelBehavior:
+                                      FloatingLabelBehavior.always,
+                                  labelText: 'Name:',
+                                  labelStyle: TextStyle(color: Colors.grey),
+                                  border: new OutlineInputBorder(
+                                    borderRadius: new BorderRadius.circular(5.0),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -159,21 +168,23 @@ class _BodyCareState extends State<BodyCare> {
                       ),
                     ],
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                          katalogWidget("assets/careScissors.png","CUT",true,),
-                          katalogWidget("assets/careGrooming.png", "GROOMING", false),
-                          katalogWidget("assets/careNail.png", "NAIL", false),
-                        ],
-                      ),
+                  Center(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: <Widget>[
+                            katalogWidget("assets/careScissors.png","CUT",true,),
+                            katalogWidget("assets/careGrooming.png", "GROOMING", false),
+                            katalogWidget("assets/careNail.png", "NAIL", false),
+                          ],
+                        ),
+                    ),
                   ),
                   Expanded(
                     child: Container(),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(100.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
