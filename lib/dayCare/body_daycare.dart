@@ -23,7 +23,7 @@ class _BodyDayCareState extends State<BodyDayCare> {
         children: <Widget>[
           Expanded(
             child: Container(
-              child: Column(
+              child: ListView(
                 children: <Widget>[
                   SizedBox(height: 20),
                   SingleChildScrollView(
@@ -167,12 +167,11 @@ class _BodyDayCareState extends State<BodyDayCare> {
                       child: Column(
                         children: <Widget>[
                           Container(
-                            height: 70.0,
+                            height: 80.0,
                             margin: const EdgeInsets.all(10),
                             padding: const EdgeInsets.all(15),
                             child: TextFormField(
                               maxLines: 3,
-                              controller: nameController,
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.always,

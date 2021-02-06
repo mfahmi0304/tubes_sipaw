@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tubes_sipaw/catagories/categories_cut.dart';
+import 'package:tubes_sipaw/catagories/categories_cat.dart';
 import 'package:tubes_sipaw/catagories/categories_dog.dart';
 import 'package:tubes_sipaw/catagories/categories_fish.dart';
 import 'package:tubes_sipaw/catagories/categories_rabbit.dart';

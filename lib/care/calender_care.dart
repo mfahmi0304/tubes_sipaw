@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:tubes_sipaw/booxing/booxing.dart';
 import 'package:tubes_sipaw/constants.dart';
 
 class CalendarPage extends StatefulWidget {
@@ -93,7 +94,15 @@ class _CalendarPageState extends State<CalendarPage> {
                           dayTask("11 am", "Muhammad Fahmi"),
                           dayTask("2 pm", "Siti Nurholis"),
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Column(
+                        children: [
+                          saveTask("S A V E"),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -104,6 +113,39 @@ class _CalendarPageState extends State<CalendarPage> {
       ),
     );
   }
+    Row saveTask(String save) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => BooxingPage(),
+              ),
+            );
+          },
+          child: Center(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 130, vertical: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  color: kPrimaryColor),
+              child: Text(
+                save,
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Row dayTask(String time, String name)
   {
     return Row(

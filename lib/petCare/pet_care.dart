@@ -12,7 +12,6 @@ class _PetCareState extends State<PetCare> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
       body: BodyPetCares(),
     );
   }

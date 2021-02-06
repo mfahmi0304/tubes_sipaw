@@ -50,7 +50,7 @@ class ScreenCatsTiga extends StatelessWidget {
             alignment: Alignment.center,
             child: Center(
               child: Container(
-                margin: EdgeInsets.only(top: 40),
+                margin: EdgeInsets.only(top: 120),
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Text(
@@ -67,7 +67,7 @@ class ScreenCatsTiga extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(top: 120),
+              margin: EdgeInsets.only(top: 200),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
@@ -83,7 +83,7 @@ class ScreenCatsTiga extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(top: 230),
+              margin: EdgeInsets.only(top: 300),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(

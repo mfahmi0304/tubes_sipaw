@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/constants.dart';
-
 class BodyPetCare extends StatefulWidget {
   @override
   _BodyPetCareState createState() => _BodyPetCareState();
@@ -16,7 +15,7 @@ class _BodyPetCareState extends State<BodyPetCare> {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 10.0),
       child: SizedBox(
-        height: 35.0,
+        height: 27.0,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: categories.length,

@@ -19,11 +19,14 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   FirebaseAuth auth = FirebaseAuth.instance; 
+  // ignore: deprecated_member_use
   final userRef = Firestore.instance.collection("users"); 
   UserModel _currentUser; 
   
+  // ignore: unused_field
   String _uid; 
   String _username; 
+  // ignore: unused_field
   String _email; 
 
   @override 
@@ -77,6 +80,7 @@ class _BodyState extends State<Body> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
+                          // ignore: unnecessary_brace_in_string_interps
                           "${_username}",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,

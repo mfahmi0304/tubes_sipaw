@@ -50,11 +50,11 @@ class ScreenDogsSatu extends StatelessWidget {
             alignment: Alignment.center,
             child: Center(
               child: Container(
-                margin: EdgeInsets.only(top: 40),
+                margin: EdgeInsets.only(top: 160),
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Text(
-                    "Cat Choize Tuna with Milk Makanan Kucing [1 Kg]",
+                    "Happy Dog Supreme Young Original Makanan Anjing",
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.5),
                         fontWeight: FontWeight.bold,
@@ -67,11 +67,11 @@ class ScreenDogsSatu extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(top: 120),
+              margin: EdgeInsets.only(top: 230),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  "Rp.28.100,-",
+                  "Rp.302.500,-",
                   style: TextStyle(
                       color: kPrimaryColor,
                       fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class ScreenDogsSatu extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(top: 230),
+              margin: EdgeInsets.only(top: 350),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(

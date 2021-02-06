@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/care/care.dart';
 import 'package:tubes_sipaw/constants.dart';
 
-class CategoriesRabbitPage extends StatelessWidget {
+class CategoriesCutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +13,7 @@ class CategoriesRabbitPage extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
-                  color: Colors.blueGrey[300],
+                  color: kButtonsColor,
                 ),
               ),
               Expanded(
@@ -41,52 +41,51 @@ class CategoriesRabbitPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(30.0),
+            padding: const EdgeInsets.all(25.0),
             child: Center(
               child: Container(
-                width: 300,
-                height: 400,
-                  margin: EdgeInsets.only(top: 20),
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: Hero(
-                      tag: 1, child: Image.asset('assets/homeBird.png', color: Colors.white,)),
-                  ),
+                width: 230,
+                margin: EdgeInsets.only(top: 20),
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child:
+                      Hero(tag: 1, child: Image.asset('assets/detailCat.png')),
+                ),
               ),
             ),
           ),
           Align(
-          alignment: Alignment.center,
-          child: Container(
-            height: 100,
-            width: 300,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey[300],
-                    blurRadius: 30,
-                    offset: Offset(0, 10),
-                  ),
-                ],
-                borderRadius: BorderRadius.circular(20)),
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Text(
-                  "Perawatan Burung",
-                  style: TextStyle(
-                    color: kButtonSColor,
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold
+            alignment: Alignment.center,
+            child: Container(
+              height: 100,
+              width: 300,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[300],
+                      blurRadius: 30,
+                      offset: Offset(0, 10),
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Text(
+                    "Perawatan Kucing",
+                    style: TextStyle(
+                      color: kButtonSColor,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
             ),
           ),
-        ),
-        Align(
+          Align(
             alignment: Alignment.center,
             child: Center(
               child: Container(
@@ -94,7 +93,7 @@ class CategoriesRabbitPage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Text(
-                    "Perawatan Burung peliharaan sangatlah diperlukan dan sangat penting untuk menjauhkan dari berbagai penyakit hewan",
+                    "Perawatan Kucing peliharaan sangatlah diperlukan dan sangat penting untuk menjauhkan dari berbagai penyakit hewan",
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.5),
@@ -106,9 +105,9 @@ class CategoriesRabbitPage extends StatelessWidget {
             ),
           ),
           Container(
-              height: 1,
-              color: Colors.yellow[700],
-            ),
+            height: 1,
+            color: Colors.yellow[700],
+          ),
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -158,7 +157,8 @@ class CategoriesRabbitPage extends StatelessWidget {
                   ),
                 ),
               ),
-      ],
-    ));
+        ],
+      ),
+    );
   }
 }
