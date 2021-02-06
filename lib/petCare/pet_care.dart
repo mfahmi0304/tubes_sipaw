@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/constants.dart';
+import 'package:tubes_sipaw/petCare/body_petcare.dart';
+
 
 class PetCare extends StatefulWidget {
   @override
@@ -9,9 +12,15 @@ class _PetCareState extends State<PetCare> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("PetCare"),
-      ),
+      appBar: buildAppBar(),
+      body: BodyPetCares(),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      backgroundColor: kPrimaryColor,
+      elevation: 0,
     );
   }
 }

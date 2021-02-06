@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/catagories/categories_cut.dart';
+import 'package:tubes_sipaw/catagories/categories_dog.dart';
+import 'package:tubes_sipaw/catagories/categories_fish.dart';
+import 'package:tubes_sipaw/catagories/categories_rabbit.dart';
 import 'package:tubes_sipaw/constants.dart';
 
 class CatagoryWithPet extends StatelessWidget {
@@ -15,22 +19,50 @@ class CatagoryWithPet extends StatelessWidget {
         CatagoriesPet(
           image: "assets/homeDog.png",
           title: "Dog",
-          press: () {},
+          press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CategoriesDogPage(),
+                ),
+              );
+            },
         ),
         CatagoriesPet(
           image: "assets/cat.png",
           title: "Cat",
-          press: () {},
+          press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CategoriesCutPage(),
+                ),
+              );
+            },
         ),
         CatagoriesPet(
           image: "assets/homeBird.png",
           title: "Bird",
-          press: () {},
+          press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CategoriesRabbitPage(),
+                ),
+              );
+            },
         ),
         CatagoriesPet(
           image: "assets/homeFish.png",
           title: "Fish",
-          press: () {},
+          press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CategoriesFishPage(),
+                ),
+              );
+            },
         ),
       ],
     );

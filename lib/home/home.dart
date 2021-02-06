@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/constants.dart';
 import 'package:tubes_sipaw/history/story.dart';
 import 'package:tubes_sipaw/home/body.dart';
-import 'package:tubes_sipaw/petCare.dart/pet_care.dart';
+import 'package:tubes_sipaw/petCare/pet_care.dart';
 import 'package:tubes_sipaw/profile/profile.dart';
 
 class HomePage extends StatefulWidget {

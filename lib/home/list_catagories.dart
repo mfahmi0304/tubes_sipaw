@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tubes_sipaw/care/care.dart';
 import 'package:tubes_sipaw/constants.dart';
 import 'package:tubes_sipaw/dayCare/day_care.dart';
-import 'package:tubes_sipaw/petCare.dart/pet_care.dart';
+import 'package:tubes_sipaw/petCare/pet_care.dart';
 
 class ListCatagoriesSipaw extends StatelessWidget {
   const ListCatagoriesSipaw({
