@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/booxing/body_booxing.dart';
 
 class StoryPage extends StatefulWidget {
   @override
@@ -9,7 +10,7 @@ class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("Booxing"),),
+      body: BodyBooxing(),
     );
   }
 }

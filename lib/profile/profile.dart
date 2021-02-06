@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tubes_sipaw/LoginReg/Login/login_screen.dart';
 import 'package:tubes_sipaw/constants.dart';
+import 'package:cloud_firestore/cloud_firestore.dart'; 
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:tubes_sipaw/libmodels/user_model.dart';
+import 'package:tubes_sipaw/libservices/authentication_service.dart'; 
+import 'package:provider/provider.dart'; 
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -7,6 +13,35 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  FirebaseAuth auth = FirebaseAuth.instance; 
+  final userRef = Firestore.instance.collection("users"); 
+  UserModel _currentUser; 
+  
+  String _uid; 
+  String _username; 
+  String _email; 
+
+  @override 
+  void initState() { 
+    super.initState(); 
+    getCurrentUser(); 
+  } 
+  
+  getCurrentUser() async { 
+    UserModel currentUser = await context 
+        .read<AuthenticationService>() 
+        .getUserFromDB(uid: auth.currentUser.uid); 
+  
+    _currentUser = currentUser; 
+  
+    print("${_currentUser.username}"); 
+  
+    setState(() { 
+      _uid = _currentUser.uid; 
+      _username = _currentUser.username; 
+      _email = _currentUser.email; 
+    }); 
+  } 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +103,58 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                   ],
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Center(
+                child: Text(
+                  "${_username}",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13,
+                    color: kTextColor,
+                  ),
+                )
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Center(
+                child: Text(
+                  "${_email}",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13,
+                    color: kTextColor,
+                  ),
+                )
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Center(
+                child: new GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return LoginScreen();
+                        },
+                      ),
+                    );
+                  },
+                  child: new Text(
+                    "Logout",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13,
+                      decoration: TextDecoration.underline,
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
               ),
             ],
